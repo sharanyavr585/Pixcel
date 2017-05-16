@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost:8888/Pixcel/pixcel-html/dashboard.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://localhost:8888/Pixcel/pixcel-html/assets/img/favicon.png">
+    <title>Pixcel</title>
+    <!--Stylesheet-->
+    <link href="./Pixcel_files/bootstrap.css" rel="stylesheet">
+    <link href="./Pixcel_files/menu.css" rel="stylesheet">
+    <link href="./Pixcel_files/font-awesome.css" rel="stylesheet">
+    <link href="./Pixcel_files/animate.css" rel="stylesheet">
+    <link href="./Pixcel_files/style.css" rel="stylesheet">
+
+    <link href="./Pixcel_files/css" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #dashboard{
+            display: none;
+        }
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+<div class="page-loader" style="display: none;">
+    <img src="./Pixcel_files/loader.gif" alt="">
+</div>
+<!-- Header
+================================================== -->
+<header id="header">
+    <div id="mega-menu" class="header header-sticky primary-menu icons-no default-skin zoomIn align-right">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default redq" role="navigation">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand large" href="http://localhost:8888/Pixcel/pixcel-html/index.html"><img src="./Pixcel_files/logo.png" alt="caymanlogo"></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                        <div class="collapse navbar-collapse">
+                            <a class="navbar-brand mobile pull-left" href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#"><i class="fa fa-diamond"></i> Cayma<span class="logo-style">N</span></a>
+                            <a class="mobile-menu-close"><i class="fa fa-random"></i></a>
+                            <ul class="nav navbar-nav nav-list">
+                                <li>
+                                    <a href="http://localhost:8888/Pixcel/pixcel-html/index.html"><i class="fa fa-bolt"></i><span class="link-item">Home</span></a>
+                                </li>
+                                <li class="dropdown redq-halfwidth">
+                                    <a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs"></i><span class="link-item"> About </span></a>
+                                </li><li class="dropdown">
+                                    <a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bolt"></i><span class="link-item">Contact</span></a>
+
+                                </li><li class="dropdown redq-fullwidth">
+                                    <a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tasks"></i><span class="link-item">Help</span></a>
+                                </li><li class="dropdown redq-fullwidth">
+                                    <a href="http://localhost:8888/Pixcel/pixcel-html/logout.php"><i class="fa fa-users"></i><span class="link-item">Sign Out </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end .nav .navbar-nav -->
+                    </div>
+                </nav>
+                <!-- end .navbar-collapse -->
+                <!-- </div> -->
+                <!-- end .container-fluid -->
+            </div>
+            <!-- end .container -->
+            
+            <!-- end nav -->
+        </div>
+        <!-- end .row -->
+    </div>
+    <!-- end .container -->
+    
+    <!-- end .header -->
+</header>
+<!-- Intro
+================================================== -->
+<section>
+    <div style="background-image:url(http://themepush.com/demo/cayman/assets/img/demo/bg2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <!-- Carousel content -->
+                    <div class="carousel-content">
+                        <div class="lrform dashboard">
+                            <ul class="tabs">
+                                <li>
+                                    <a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#hashtag" class="active">Your Events</a>
+                                </li>
+                            </ul>
+                            <div id="hashtag">
+                                <h1>Dashboard</h1>
+                                <p>
+                                    Create, View or Edit Your Events
+                                </p>
+
+                                <!--My Event List -->
+                                <div class="row text-right">
+                                    <div class="col-lg-2 col-lg-offset-9">
+                                        <a class="btn icon-btn btn-default" href="http://localhost:8888/Pixcel/pixcel-html/chooseAccount.html"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Add</a>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                   <div class="col-lg-10 col-lg-offset-1 col-md-6 col-offset-2 col-sm-8 col-sm-offset-2">
+                                        <div class="col-lg-12" data-position="inline" id="nav">
+                                            <ul id="Testlist" data-role="listview" class="list-group" style="
+                                             height:160px; overflow-y: scroll;">
+
+                                        
+                                                        <li class="list-group-item list-group-item-heading" style="text-align: left;">My Inspiration <button class="btn-group-xs  btn-primary pull-right btn-space" onclick="deleteDashboard(2)">Delete</button><button class="btn-group-xs btn-warning pull-right btn-space" onclick="editDashboard(2)">Edit</button><button class="btn-group-xs btn-danger pull-right" onclick="viewDashboard(2,&#39;Twitter&#39;)">View</button></li>
+                                                       
+                                                        <li class="list-group-item list-group-item-heading" style="text-align: left;">I support <button class="btn-group-xs  btn-primary pull-right btn-space" onclick="deleteDashboard(4)">Delete</button><button class="btn-group-xs btn-warning pull-right btn-space" data-toggle="modal" data-target="#myModal1">Edit</button><button class="btn-group-xs btn-danger pull-right" onclick="viewDashboard(4,&#39;YouTube&#39;)">View</button></li>
+                                                       
+                                                        <li class="list-group-item list-group-item-heading" style="text-align: left;">entertainment <button class="btn-group-xs  btn-primary pull-right btn-space" onclick="deleteDashboard(6)">Delete</button><button class="btn-group-xs btn-warning pull-right btn-space" onclick="editDashboard(6)">Edit</button><button class="btn-group-xs btn-danger pull-right" onclick="viewDashboard(6,&#39;Twitter&#39;)">View</button></li>
+                                                       
+                                                        <li class="list-group-item list-group-item-heading" style="text-align: left;">cricket <button class="btn-group-xs  btn-primary pull-right btn-space" onclick="deleteDashboard(7)">Delete</button><button class="btn-group-xs btn-warning pull-right btn-space" data-toggle="modal" data-target="#myModal1">Edit</button><button class="btn-group-xs btn-danger pull-right" onclick="viewDashboard(7,&#39;YouTube&#39;)">View</button></li>
+                                                                                                   </ul>
+                                            <br>
+                                        </div>
+
+                                        <!-- Modal -->
+                                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Please Enter the following Details</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-3" for="email">Event Name:</label>
+                                                        <div class="col-sm-5">
+                                                            <input type="email" class="form-control" id="fname" placeholder="Choose a name for your event">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-3" for="email">Hashtag:</label>
+                                                        <div class="col-sm-5">
+                                                            <input type="email" class="form-control" id="email" placeholder="Choose your hashtag">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <button class="btn btn-xs" style="display:inline-block;">+</button>
+                                                        </div>
+                                                    </div>
+
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+                                                <a> <button type="button" class="btn btn-primary">Next</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--Modal Ends Here-->
+
+                                   </div>
+                                </div>
+
+                                <!--Event List Ends here-->
+
+                            </div>
+                            <!--/#login.form-action-->
+
+
+
+                        </div>
+                        <!--/#login.form-action-->
+
+
+                    </div><!--dashboard ending-->
+                </div>
+                <!-- Carousel content end -->
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+</section>
+<!-- Footer
+================================================== -->
+<section id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="social-icons">
+                    <li class="wow bounceIn animated animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"><a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#."><i class="fa fa-facebook"></i></a></li>
+                    <li class="wow bounceIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;"><a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#."><i class="fa fa-twitter"></i></a></li>
+                    <li class="wow bounceIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;"><a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#."><i class="fa fa-google-plus"></i></a></li>
+                    <li class="wow bounceIn animated animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;"><a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#."><i class="fa fa-dribbble"></i></a></li>
+                    <li class="wow bounceIn animated animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;"><a href="http://localhost:8888/Pixcel/pixcel-html/dashboard.php#."><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <a href="http://localhost:8888/Pixcel/pixcel-html/index.html"><img src="./Pixcel_files/logo.png" class="footerlogo wow zoomIn animated" alt="caymanlogo" style="visibility: visible; animation-name: zoomIn;"></a>
+                <p class="copyright">
+                    © Theme by WowThemes.net. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- JavaScript
+================================================== -->
+<script src="./Pixcel_files/jquery.js"></script>
+<script src="./Pixcel_files/bootstrap.js"></script>
+<script src="./Pixcel_files/plugins.js"></script>
+<script src="./Pixcel_files/parallax.js"></script>
+<script src="./Pixcel_files/countto.js"></script>
+<script src="./Pixcel_files/portfolio.js"></script>
+<script src="./Pixcel_files/scripts.js"></script>
+<script>
+    (function( $ ) {
+        // constants
+        var SHOW_CLASS = 'show',
+                HIDE_CLASS = 'hide',
+                ACTIVE_CLASS = 'active';
+        $( '.tabs' ).on( 'click', 'li a', function(e){
+            e.preventDefault();
+            var $tab = $( this ),
+                    href = $tab.attr( 'href' );
+            $( '.active' ).removeClass( ACTIVE_CLASS );
+            $tab.addClass( ACTIVE_CLASS );
+            $( '.show' )
+                    .removeClass( SHOW_CLASS )
+                    .addClass( HIDE_CLASS )
+                    .hide();
+            $(href)
+                    .removeClass( HIDE_CLASS )
+                    .addClass( SHOW_CLASS )
+                    .hide()
+                    .fadeIn( 550 );
+        });
+    })( jQuery );
+
+    var pathArray = window.location.href.split( '=' );
+    var hashName= pathArray[1];
+
+function viewDashboard(did,type){
+    //Create a form
+    var dsform = document.createElement("form");
+    
+    dsform.method = "POST";
+    dsform.target = "_blank";
+    if(type == "Twitter")
+        dsform.action = "twitter-oauth/publish.php";
+    else
+        dsform.action = "youtube.php";
+    
+    //Create an input
+    var dsinput = document.createElement("input");
+    dsinput.type = "text";
+    dsinput.name = "did";
+    dsinput.value = did;
+    
+    dsform.appendChild(dsinput);
+    
+    document.body.appendChild(dsform);
+    dsform.submit();
+}
+
+function editDashboard(did){
+    //Create a form
+    var dsform = document.createElement("form");
+    
+    dsform.method = "POST";
+    dsform.action = "twitter-oauth/twittertemplate.php";
+    
+    //Create an input
+    var dsinput = document.createElement("input");
+    dsinput.type = "text";
+    dsinput.name = "did";
+    dsinput.value = did;
+    
+    dsform.appendChild(dsinput);
+    
+    document.body.appendChild(dsform);
+    dsform.submit();
+}
+
+function deleteDashboard(did){
+    //Create a form
+    var dsform = document.createElement("form");
+
+    dsform.method = "POST";
+    dsform.action = "deleteFromDashboard.php";
+
+    //Create an input
+    var dsinput = document.createElement("input");
+    dsinput.type = "text";
+    dsinput.name = "did";
+    dsinput.value = did;
+
+    dsform.appendChild(dsinput);
+
+    document.body.appendChild(dsform);
+    dsform.submit();
+}
+
+</script>
+
+<form method="POST" target="_blank" action="http://localhost:8888/Pixcel/pixcel-html/youtube.php"><input type="text" name="did"></form><form method="POST" target="_blank" action="http://localhost:8888/Pixcel/pixcel-html/twitter-oauth/publish.php"><input type="text" name="did"></form></body></html>

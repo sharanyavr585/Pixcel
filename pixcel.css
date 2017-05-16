@@ -1,0 +1,190 @@
+@keyframes slidedown {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 90000%;
+    }
+}
+
+@-webkit-keyframes slidedown {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+
+#masthead {
+    background-image: url('./assets/img/background.png');
+    background-repeat: repeat-x repeat-y;
+    animation: slidedown 8000s infinite linear;
+    -webkit-animation: slidedown 8000s infinite linear;
+    width: 100%;
+    height: 1200px;
+}
+
+.moving-bg{
+    width: 100%;
+    height: 1200px;
+    background: rgba(0,0,0,0.4);
+ }
+ .elegantshadow h1{
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 122px;
+  padding: 80px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  }
+
+  .elegantshadow{
+    margin-top: 25%;
+    margin-left: 10%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #34495e;
+    letter-spacing: .25em;
+  }
+
+
+ 
+.step1 {
+   /* margin-left: 10%;
+    margin-top: 16%;*/
+    width:125px;
+    height:125px;
+    background-image: url("./assets/img/account.png");
+    position: relative;
+    -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
+    animation: mymove 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 400px;}
+    to {left: 0px;}
+}
+
+@keyframes mymove {
+    from {left: 400px;}
+    to {left: 0px;}
+}
+.step2 {
+    /*margin-left: 10%;
+    margin-top: 16%;*/
+    width:125px;
+    height:125px;
+    background-image: url("./assets/img/gallery.png");
+    position: relative;
+    -webkit-animation: mymove 7s; /* Chrome, Safari, Opera */
+    animation: mymove 3s;
+   
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 400px;}
+    to {left: 300px;}
+}
+
+@keyframes mymove {
+    from {left: 400px;}
+    to {left: 300px;}
+}
+.step3{
+    color: black;
+    /*margin-left: 10%;
+    margin-top: 16%;*/
+    width:125px;
+    height:125px;
+    background-image: url("./assets/img/final.png");
+    position: relative;
+    -webkit-animation: mymove 9s; /* Chrome, Safari, Opera */
+    animation: mymove 4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 400px;}
+    to {left: 0px;}
+}
+
+@keyframes mymove {
+    from {left: 400px;}
+    to {left: 0px;}
+}
+
+/*caption for step1 */
+.step1caption1{
+
+    position: relative;
+    -webkit-animation: mymove 4s; /* Chrome, Safari, Opera */
+    animation: mymove 4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+.step2caption2{
+    position: relative;
+    -webkit-animation: mymove 6s; /* Chrome, Safari, Opera */
+    animation: mymove 6s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.step3caption3{
+
+    position: relative;
+    -webkit-animation: mymove 8s; /* Chrome, Safari, Opera */
+    animation: mymove 8s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.instructions {
+    padding: 0 !important;
+}
+
+.dashboard {
+    background-color:#20b2aa;
+    margin:25px auto;
+    width:800px;
+    min-height:400px;
+    position:relative;
+    border-radius:3px;
+     margin-top:-60px;
+}
+#left-panel{
+    max-height: 100%;
+    height: 100%;
+    background-color: #b93418;
+}
+
+#page-content-wrapper {
+    padding: 0px;
+}
+#sidebar-wrapper {
+    margin-top: 0px;
+}
+#page-content-wrapper .container-fluid {
+    padding-left:0px;
+    padding-right: 0px;
+}
+
+#dashboard{
+            width: 500px;
+            height: 400px;
+        }
+.btn-space {
+    margin-right: 10px;
+}
+
+
